@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1</title>
+  <style>
+    .container {
+      max-width: 100vw;
+      height: 100vh;
+    }
+
+    /* Apply to all children of container */
+    .container>* {
+      padding: 10px;
+      color: #fff;
+    }
+    
+/*Apply GTA properties*/
+    .grid {
+      display: grid;
+      grid-template-areas:
+      'header header header header'
+      'nav main main main'
+      'nav main main main'
+      'nav main main main'
+      'footer footer footer footer';
+      }
+
+
+/*add grid areas*/
+    header {
+      grid-area: header;
+      background-color: #f00;
+    }
+
+    nav {
+      grid-area: nav;
+      background-color: #0f0;
+    }
+
+    main {
+      grid-area: main;
+      background-color: #00f;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container grid">
+    <header>Header</header>
+    <nav>Side Nav</nav>
+    <main>Main Content</main>
+    <footer>Footer</footer>
+  </div>
+</body>
+
+</html>

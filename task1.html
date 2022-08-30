@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1</title>
+  <style>
+    .container {
+      max-width: 700px;
+      border: 1px solid #ccc;
+    }
+
+    .grid {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    .container>div {
+      background-color: blueviolet;
+      border: 3px solid paleturquoise;
+      padding: 20px;
+      font-weight: bold;
+      color: #fff;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container grid">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+  </div>
+</body>
+
+</html>
