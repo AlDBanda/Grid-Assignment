@@ -16,20 +16,22 @@
       padding: 10px;
       color: #fff;
     }
-    
-/*Apply GTA properties*/
+
+    /*Apply GTA properties*/
     .grid {
       display: grid;
       grid-template-areas:
-      'header  header header'
-      'nav main main'
-      'nav main main'
-      'nav main main'
-      'footer footer footer footer';
-      }
+        'header  header  header'
+        'nav main main'
+        'nav main main'
+        'nav main main'
+        'nav main main'
+        'nav main main'
+        'footer footer footer ';
+    }
 
 
-/*add grid areas*/
+    /*add grid areas*/
     header {
       grid-area: header;
       background-color: #f00;
@@ -39,10 +41,11 @@
       grid-area: nav;
       background-color: #0f0;
     }
-
+/*fix height property*/
     main {
       grid-area: main;
       background-color: #00f;
+      height: 200px;
     }
 
     footer {
